@@ -10,5 +10,14 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>OneFunction</Title>
 	  <Description>A C# tool that allows users to input strings and obtain their MD5 hashed values in Base64 format.</Description>
+	  <PackageProjectUrl>https://github.com/Vinivaf/OneFunction</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/Vinivaf/OneFunction</RepositoryUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
