@@ -1,7 +1,3 @@
-Absolutely! Here's an updated README for your C# tool:
-
----
-
 # C# Tool for Generating MD5 Hashes in Base64
 
 This C# tool enables users to input strings and receive their corresponding MD5 hashed values in Base64 representation. It provides a command-line interface for interaction.
@@ -20,21 +16,27 @@ This C# tool enables users to input strings and receive their corresponding MD5 
 
 6. **Continual Operation:** The tool continuously prompts for input and generates corresponding Base64 MD5 hashes until manually terminated.
 
-## Requirements
+## Installation
 
-- .NET SDK
-- C# Compiler
+### Installing a Specific Version
 
-## How to Use
+To install a specific version of the `OneFunction` tool globally, you can use the following command:
 
-1. Clone or download the repository containing this tool.
+```bash
+dotnet tool install --global OneFunction --version 1.0.0
+```
 
-2. Open the tool in a C# compatible IDE or use the command line.
+Replace `OneFunction` with the actual name of your tool, and specify the desired version (in this case, `1.0.0`). This command will install the specified version of the tool globally on your system.
 
-3. Compile the tool using the appropriate compiler or IDE command.
+### Local Installation
 
-4. Run the compiled executable.
+If you have the `.nupkg` file locally, you can install it using the `-s` or `--add-source` option:
 
+```bash
+dotnet tool install --global OneFunction --add-source "C:\[YourFullPath]\OneFunction"
+```
+
+Replace the `source` path with the directory containing the `.nupkg` file for the `OneFunction` tool.
 
 ## Project Details
 
@@ -42,4 +44,3 @@ This C# tool enables users to input strings and receive their corresponding MD5 
 - **Implicit Usings:** Enabled
 - **Nullable Reference Types:** Enabled
 - **Packaging Configuration:** Outputs as a tool with a specified output path for the package.
-
