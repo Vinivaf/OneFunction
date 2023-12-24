@@ -56,7 +56,7 @@ public class Program
             {
                 byte[] hashBytes = md5.ComputeHash(inputBytes);
                 string hashedString = Convert.ToBase64String(hashBytes);
-                Console.WriteLine($"Result '{inputString}': {hashedString}");
+                Console.WriteLine($"Result: {hashedString}");
             }
         }
         else
