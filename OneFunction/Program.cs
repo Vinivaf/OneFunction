@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using SimpleBase;
+using System.Security.Cryptography;
 using System.Text;
 
 public class Program
@@ -56,7 +57,13 @@ public class Program
             {
                 byte[] hashBytes = md5.ComputeHash(inputBytes);
                 string hashedString = Convert.ToBase64String(hashBytes);
-                Console.WriteLine($"Result: {hashedString}");
+                Console.WriteLine($"Result [ASCII64]: {hashedString}");
+                
+                hashedString = Base85.Ascii85.Encode(hashBytes);
+                Console.WriteLine($"Result [ASCII85]: {hashedString}");
+
+                hashedString = Base85.Z85.Encode(hashBytes);
+                Console.WriteLine($"Result [Z85]: {hashedString}");
             }
         }
         else
