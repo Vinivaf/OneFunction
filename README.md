@@ -10,7 +10,7 @@ This C# tool enables users to input strings and receive their corresponding MD5 
 
 3. **Hash Generation:** Once the user submits the input, the tool computes the MD5 hash of the input string using UTF-8 encoding.
 
-4. **Base64 Representation:** The resulting MD5 hash is converted into its Base64 representation.
+4. **Representation:** The resulting MD5 hash is converted into its Base64 and Base85 (Additional Z85) representations.
 
 5. **Display:** The Base64-encoded MD5 hash is displayed on the console as the output.
 
